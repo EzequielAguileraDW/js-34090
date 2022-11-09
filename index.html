@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezequiel Aguilera - 34090</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <h1>Entrega 1er desafio</h1>
+    <h1>Entrega 2do desafio</h1>
 
 
     <h3>PC's a medida</h3>
@@ -17,22 +18,39 @@
     <hr>
 
     <h3>Comprar memoria RAM</h3>
-    <p>Cantidad</p><input type="text" class="cantidad">
+    <p>Cantidad</p><input type="text" class="cantidad" placeholder="Ingrese la cantidad a comprar" required>
     <button onclick="calcular();">Calcular</button>
     <p>Total</p><input type="text" class="total">
     <hr>
 
-
     <h3>Servicio técnico remoto</h3>
-    <button onclick="remoto();"">Seleccionar</button>
+    <!-- <input type="text" id="nombre" placeholder="Ingrese su nombre">
+    <br>
+    <input type="text" id="celu" placeholder="Ingrese su celular"> -->
+    <button onclick="remoto();"">Solicitar</button>
+    <p id="msj"></p>
     <hr>
-    
+
+    <h3>Lista de servicios disponibles:</h3>
+    <ol>
+        <li>Reparación</li>
+        <li>Armado de PC</li>
+        <li>Mantenimiento</li>
+        <li>Formateo</li>
+    </ol>
+    <button class="seleccionar" onclick="service()">Seleccionar</button>
+    <hr>
+
     <h3>Forma de pago</h3>
     <button onclick="pago();"">Seleccionar</button>
     <hr>
 
 
-    <script src="./js/script.js"></script>
+
+
+
+
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
