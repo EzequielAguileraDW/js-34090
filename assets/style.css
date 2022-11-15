@@ -23,3 +23,17 @@ button:hover{
 .cantidad{
     width: 200px;
 }
+
+#enviar{
+    cursor: pointer;
+    background-color: #1987b3;
+    border-radius: 6px;
+    color: whitesmoke;
+    width: 120px;
+    height: 30px;
+    transition: .4s;
+}
+
+#enviar:hover{
+    background-color: #1a6583;
+}

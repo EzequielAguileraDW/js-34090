@@ -11,16 +11,21 @@ function armadoPc() {
         alert("Ingrese un monto entre $15.000 y $100.000");
     }
 }
+let armado = document.getElementById("armado");
+armado.onclick = () => armadoPc();
+
+
 
 
 //En esta sección solicito nombre y celular para comunicarme con el cliente.
-function remoto() {
-    let nombre = prompt("Ingrese su nombre:")
-    let celular = prompt("Ingrese su celular:")
-    alert(`Hola ${nombre}, en breve me estaré comunicando con usted para asistirlo/a!`)
-    //let msj = document.getElementById('msj');
-    //msj.innerHTML = `<p>Hola ${nombre}, en breve me estaré comunicando con usted para asistirlo/a!</p>`;
-}
+let formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let inputs = e.target.children;
+    alert(`Hola ${inputs[0].value}, en breve me estaré comunicando con usted.`);
+})
+
+
 
 
 
@@ -34,6 +39,9 @@ function calcular() {
         total[c].value = cantidad[c].value * precio;
     }
 }
+let calculo = document.getElementById("calculo");
+calculo.onclick = () => calcular();
+
 
 
 
@@ -54,9 +62,11 @@ function service() {
         let mensaje = `Usted seleccionó ${encontrado.nombre} y tiene un costo de $${encontrado.precio} \nPara confirmar proceda eligiendo Forma de pago.`;
         alert(mensaje);
     } else {
-        alert("Producto no encontrado");
+        alert("Servicio no encontrado");
     }
 }
+let seleccionar = document.getElementById("seleccionar");
+seleccionar.onclick = () => service();
 
 
 
@@ -79,3 +89,5 @@ function pago() {
             break;
     }
 }
+let pago1 = document.getElementById("pago1");
+pago1.onclick = () => pago();

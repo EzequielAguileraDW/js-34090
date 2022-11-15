@@ -14,22 +14,31 @@
 
 
     <h3>PC's a medida</h3>
-    <button onclick="armadoPc();">Seleccionar</button>
+    <button id="armado">Seleccionar</button>
     <hr>
+
+
+
 
     <h3>Comprar memoria RAM</h3>
     <p>Cantidad</p><input type="text" class="cantidad" placeholder="Ingrese la cantidad a comprar" required>
-    <button onclick="calcular();">Calcular</button>
+    <button id="calculo">Calcular</button>
     <p>Total</p><input type="text" class="total">
     <hr>
 
+
+
+
     <h3>Servicio técnico remoto</h3>
-    <!-- <input type="text" id="nombre" placeholder="Ingrese su nombre">
-    <br>
-    <input type="text" id="celu" placeholder="Ingrese su celular"> -->
-    <button onclick="remoto();"">Solicitar</button>
-    <p id="msj"></p>
+    <form id="formulario">
+        <input type="text" placeholder="Ingrese su nombre"><br><br>
+        <input type="number" placeholder="Ingrese su celular"><br><br>
+        <input type="submit" value="Solicitar" id="enviar">
+    </form>
     <hr>
+
+
+
 
     <h3>Lista de servicios disponibles:</h3>
     <ol>
@@ -38,16 +47,15 @@
         <li>Mantenimiento</li>
         <li>Formateo</li>
     </ol>
-    <button class="seleccionar" onclick="service()">Seleccionar</button>
+    <button id="seleccionar">Seleccionar</button>
     <hr>
+
+
+
 
     <h3>Forma de pago</h3>
-    <button onclick="pago();"">Seleccionar</button>
+    <button id="pago1">Seleccionar</button>
     <hr>
-
-
-
-
 
 
     <script src="./assets/script.js"></script>
