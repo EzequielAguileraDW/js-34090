@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezequiel Aguilera - 34090</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
-<body>
-    <h1>Entrega 2do desafio</h1>
+<body class="darkmode" id="darkmode">
+    <h1>Entrega 3er desafio</h1>
 
+    <button id="color-mode">DarkMode</button>
 
-    <h3>PC's a medida</h3>
-    <button id="armado">Seleccionar</button>
-    <hr>
-
+    <button><a href="./pages/service.html">Ir a Servicios</a></button>
 
 
 
@@ -29,36 +28,22 @@
 
 
 
-    <h3>Servicio técnico remoto</h3>
+    <h3>Contacto</h3>
     <form id="formulario">
-        <input type="text" placeholder="Ingrese su nombre"><br><br>
-        <input type="number" placeholder="Ingrese su celular"><br><br>
-        <input type="submit" value="Solicitar" id="enviar">
+        <input type="text" placeholder="Ingrese su nombre" required><br><br>
+        <input type="number" placeholder="Ingrese su celular" required><br><br>
+        <input type="submit" value="Contactar" id="enviar">
     </form>
     <hr>
 
-
-
-
-    <h3>Lista de servicios disponibles:</h3>
-    <ol>
-        <li>Reparación</li>
-        <li>Armado de PC</li>
-        <li>Mantenimiento</li>
-        <li>Formateo</li>
-    </ol>
-    <button id="seleccionar">Seleccionar</button>
+    <h3>PC's a medida</h3>
+    <button id="armado">Seleccionar</button>
     <hr>
 
 
-
-
-    <h3>Forma de pago</h3>
-    <button id="pago1">Seleccionar</button>
-    <hr>
-
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/script.js"></script>
+    
 </body>
 
 </html>
